@@ -35,40 +35,6 @@
 
 
 #---------------------------------------------------------->
-#Ques1 : WAP to ask the user to enter names of their 3 favourite movies & store them in a list.
-# movies = []
-
-# movie = input("Enter first movie : ")
-# movies.append(movie)
-
-# movie = input("Enter second movie : ")
-# movies.append(movie)
-
-# movie = input("Enter third movie : ")
-# movies.append(movie)
-
-# print(movies)
-
-#---------------------------------------------------------->
-#Ques2 : WAP to check if a list contains a plaindrome of elements.
-# list = [1, 2, 1, 3]
-# copy_list = list.copy()
-# copy_list.reverse()
-
-# if(copy_list == list):
-#     print("Palindrome")
-# else:
-#     print("Not palindrome")   
-
-
-#---------------------------------------------------------->
-#Ques3 : WAP to count the number of students with the "A" grade in the following tuple 
+#Ques1 : WAP to count the number of students with the "A" grade in the following tuple 
 grade = ("C", "D", "A", "A", "B", "B", "A")
 print(grade.count("A"))                #prints 3
-
-
-#---------------------------------------------------------->
-#Ques4 : WAP to store ("C", "D", "A", "A", "B", "B", "A") in a list and sort them in ascending order
-grade = ["C", "D", "A", "A", "B", "B", "A"]
-grade.sort()
-print(grade)
