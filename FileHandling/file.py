@@ -37,3 +37,46 @@
 #--------------------------Deleting a file---------------------------------------------------------->
 # import os
 # os.remove("FileHandling/sample.txt")
+
+
+#---------------------------Question 1----------------------------------------->.
+# with open("FileHandling/practice.txt", "w") as f:
+#     f.write("Hi everyone\nwe are learning File I/O\nusing Java.\nI like programming in Java.")
+
+
+#---------------------------Question 2----------------------------------------->.
+# with open("FileHandling/practice.txt", "r") as f:
+#     data = f.read()
+
+# newData = data.replace("Java", "Python")    
+# print(newData)
+
+# with open("practice.txt", "w") as f:
+#     f.write(newData)
+
+
+#---------------------------Question 3----------------------------------------->
+def checkForWord():
+    word = "pyq"
+    with open("FileHandling/practice.txt", "r") as f:
+        data = f.read()
+        if(word in data):
+            print("Found")
+        else:
+            print("Not found")
+
+def checkForLine():
+    word = "pyq"
+    data = True
+    lineNum = 1
+    with open("FileHandling/practice.txt", "r") as f:
+        while data:
+            data = f.readline()
+            if(word in data):
+                print(lineNum)
+                return
+            lineNum += 1
+
+    return -1            
+
+print(checkForLine())
