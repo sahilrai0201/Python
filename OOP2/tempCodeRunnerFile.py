@@ -1,1 +1,1 @@
-print(acc1.__acc_pass)
+self.percentage = str((self.phy + self.chem + self.math) / 3) + "%"
